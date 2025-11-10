@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="All Test Suite" thread-count="3" parallel="methods" data-provider-thread-count="3">-->
+<suite name="All Test Suite" thread-count="3" parallel="false">
+    <listeners>
+        <listener class-name="utilities.Listeners.Listener"></listener>
+      <!--  <listener class-name="org.utilities.Listeners.DataProviderTransformer"></listener>-->
+<!--        <listener class-name="utilities.Listeners.MethodInterceptor"></listener>-->
+    </listeners>
+
+    <test name="Test ">
+        <classes>
+            <class name="org.tests.LoginTest">
+            </class>
+
+        </classes>
+    </test>
+
+
+
+</suite>
